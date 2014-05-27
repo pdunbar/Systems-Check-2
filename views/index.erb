@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AFC Teams</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Teams of The American Football League</h1>
+    </header>
+    <table align="center">
+      <tr>
+        <th colspan="2" >AFC Teams</th>
+      </tr>
+
+      <% @standings.each do |standing| %>
+        <tr>
+          <td rowspan="2"><img src=<%="/imgs/#{team}.gif" %>></td>
+          <td class="team_link">
+            <a href="<%= url("/teams/#{team}") %>"><%= "#{team}" %></a>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+
+
+  </body>
+</html>

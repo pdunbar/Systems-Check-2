@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AFC Teams</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>AFL Leaderboard</h1>
+    </header>
+    <table align="center">
+      <tr>
+        <th colspan="2" >AFC Rankings</th>
+      </tr>
+
+      <!-- The completion of leaderboard.erb has been hindered by my data structure
+           not being properly sorted. If my sorting of the standings was complete in
+           server.rb, this page would be a breeze. Please see index.erb to see that
+           I can in fact work with sinatra.
+      -->
+
+
+      <% @standings.each do |standing| %>
+        <% team = standing.first.first %>
+        <tr>
+          <td rowspan="2"><img src=<%="/imgs/#{team}.gif" %>></td>
+          <td>
+            <%= "#{team}" %></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="team_standings"><%= "team_standings"%></td>
+        </tr>
+      <% end %>
+    </table>
+
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+  background-color: lightgray;
+}
+
+td img {
+  width:80px;
+  padding-left: 20px;
+}
+
+table {
+  font-family:  "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  background-color: white;
+  width: 40%;
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+th {
+  color: white;
+  background-color: darkblue;
+  border-radius:10px 10px 3px 3px;
+}
+
+.team_link {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.team_link a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.team_standings {
+  padding-bottom: 15px;
+  padding-left: 10px;
+  font-size: .8em;
+}
